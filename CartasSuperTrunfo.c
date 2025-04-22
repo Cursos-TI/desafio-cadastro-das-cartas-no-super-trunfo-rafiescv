@@ -202,10 +202,13 @@ int main() {
    //Pontos Turísticos;
    printf("- Pontos Turísticos: Carta %d venceu\n", pontos_turisticos1 > pontos_turisticos2);
    //Densidade Populacional;
-   printf("- Densidade Populacional: Carta %d venceu\n", densidade_populacional1 < densidade_populacional2);
+   printf("- Densidade Populacional (o menor vence): Carta %d venceu\n", densidade_populacional1 < densidade_populacional2);
    //PIB per Capita;
    printf("- PIB per Capita: Carta %d venceu\n", pibpercapita1 > pibpercapita2);
    //Super Poder;
    printf("- Super Poder: Carta %d venceu\n", superpoder1 > superpoder2);
-    return 0;
+
+   printf("\n");
+    
+   return 0;
 }
