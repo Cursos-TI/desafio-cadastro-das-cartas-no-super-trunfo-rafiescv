@@ -1,22 +1,139 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    //Dados para a carta 1;
+    char estado1;
+    char codigo1[4];
+    char cidade1[50];
+    int populacao1;
+    float area1;
+    float pib1;
+    int pontos_turisticos1;
+
+   //Dados para a carta 2;
+   char estado2;
+   char codigo2[4];
+   char cidade2[50];
+   int populacao2;
+   float area2;
+   float pib2;
+   int pontos_turisticos2;
+
+   //Título inicial do desafio;
+   printf("                     *       DESAFIO SUPER TRUNFO      *                         \n");
+   printf("                     ***********************************                         \n");
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+   
+   printf("                     * INFORME OS DADOS PARA A CARTA 1 *                         \n"); //Título da primeira carta;
+   printf("                     ***********************************                         \n");
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //Estado;
+   printf("Informe uma letra de 'A' a 'H' para indicar o primeiro estado.\n");
+   printf("Estado:");
+   scanf("%c", &estado1);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+   
+   //Código;
+   printf("Informe a letra do estado mencionado anteriormente, seguida de um número de 01 a 04.\n");
+   printf("Código:");
+   scanf("%s", codigo1);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //Cidade;
+   printf("Informe o nome da primera cidade.\n");
+   printf("Cidade:");
+   scanf("%s", cidade1);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //População;
+   printf("Informe o número de habitantes da cidade.\n");
+   printf("População:");
+   scanf("%d", &populacao1);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //Área;
+   printf("Informe a área em quilômetros quadrados (km²).\n");
+   printf("Área:");
+   scanf("%f", &area1);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //PIB;
+   printf("Informe o Produto Interno Bruto da cidade (PIB).\n");
+   printf("PIB:");
+   scanf("%f", &pib1);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //Pontos Turísticos;
+   printf("Informe a quantidade de pontos turísticos na cidade.\n");
+   printf("Quantidade de Pontos Turísticos:");
+   scanf("%d", &pontos_turisticos1);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   printf("                     * INFORME OS DADOS PARA A CARTA 2 *                         \n");
+   printf("                     ***********************************                         \n");
+
+   printf("\n");
+
+   //Estado;
+   printf("Informe uma letra de 'A' a 'H' para o segundo estado.\n");
+   printf("Estado:");
+   scanf("%s", &estado2);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+   
+   //Código;
+   printf("Informe a letra do estado mencionado anteriormente, seguida de um número de 01 a 04.\n");
+   printf("Código:");
+   scanf("%s", codigo2);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //Cidade;
+   printf("Informe o nome da segunda cidade.\n");
+   printf("Cidade:");
+   scanf("%s", cidade2);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //População;
+   printf("Informe o número de habitantes da cidade.\n");
+   printf("População:");
+   scanf("%d", &populacao2);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //Área;
+   printf("Informe a área em quilômetros quadrados (km²).\n");
+   printf("Área:");
+   scanf("%f", &area2);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //PIB;
+   printf("Informe o Produto Interno Bruto da cidade (PIB).\n");
+   printf("PIB:");
+   scanf("%f", &pib2);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+   //Pontos Turísticos;
+   printf("Informe a quantidade de pontos turísticos na cidade.\n");
+   printf("Quantidade de Pontos Turísticos:");
+   scanf("%d", &pontos_turisticos2);
+
+   printf("\n"); //para dividir os dados e melhorar a visualização;
+
+  
 
     return 0;
 }
