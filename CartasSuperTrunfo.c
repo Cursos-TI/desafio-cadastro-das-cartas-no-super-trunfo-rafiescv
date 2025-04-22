@@ -134,8 +134,8 @@ int main() {
    printf("\n"); //para dividir os dados e melhorar a visualização;
 
    //Impressão das cartas;
-   printf("* CARTA 1 *\n");
-   printf("***********\n");
+   printf("                     *            CARTA 01             *                         \n");
+   printf("                     ***********************************                         \n");
 
    printf("\n");
 
@@ -161,8 +161,8 @@ int main() {
 
    printf("\n");
 
-   printf("* CARTA 2 *\n");
-   printf("***********\n");
+   printf("                     *            CARTA 02             *                         \n");
+   printf("                     ***********************************                         \n");
 
    printf("\n");
 
@@ -188,21 +188,25 @@ int main() {
 
    printf("\n");
 
-   printf("* COMPARAÇÃO DAS CARTAS *\n");
-   printf("*************************\n");
+   printf("                     *      COMPARAÇÃO DAS CARTAS      *                         \n");
+   printf("                     ***********************************                         \n");
 
    printf("\n");
 
+   printf("* POPULAÇÃO *\n");
+   printf("*************\n");
+   printf("\n");
    //População;
-    printf("* POPULAÇÃO *\n");
-    if (populacao1 > populacao2) {
-        printf("Carta 1: %s - %lu\n", populacao1);
-    } else {
-        printf("Carta 2: %s - %lu\n", populacao2);
-        printf("Resultado: Carta %d venceu", populacao1 > populacao2);
-    }
+   printf("Carta 1 - %s: %lu habitantes\n", cidade1, populacao1);
+   printf("Carta 2 - %s: %lu habitantes\n", cidade2, populacao2);
 
-   
+   printf("\n");
+
+   if (populacao1 > populacao2) {
+    printf("Carta 1: %s venceu!\n", cidade1); 
+   } else {
+    printf("Carta 2: %s venceu!\n", cidade2);
+   }
 
 
 
