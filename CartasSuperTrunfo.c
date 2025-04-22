@@ -5,7 +5,7 @@ int main() {
     char estado1;
     char codigo1[4];
     char cidade1[50];
-    int populacao1;
+    unsigned long int populacao1;
     float area1;
     float pib1;
     int pontos_turisticos1;
@@ -14,7 +14,7 @@ int main() {
    char estado2;
    char codigo2[4];
    char cidade2[50];
-   int populacao2;
+   unsigned long int populacao2;
    float area2;
    float pib2;
    int pontos_turisticos2;
@@ -54,7 +54,7 @@ int main() {
    //População;
    printf("Informe o número de habitantes da cidade.\n");
    printf("População:");
-   scanf("%d", &populacao1);
+   scanf("%lu", &populacao1);
 
    printf("\n"); //para dividir os dados e melhorar a visualização;
 
@@ -108,7 +108,7 @@ int main() {
    //População;
    printf("Informe o número de habitantes da cidade.\n");
    printf("População:");
-   scanf("%d", &populacao2);
+   scanf("%lu", &populacao2);
 
    printf("\n"); //para dividir os dados e melhorar a visualização;
 
@@ -145,15 +145,19 @@ int main() {
    //Cálculo do pib per capita por meio da divisão do pib pela população;
    float pibpercapita1 = (pib1 * 1000000000) / (float) populacao1;
 
+   //Inverso e soma;
+   float superpoder1 = (float) populacao1 + area1 + pib1 + (float) pontos_turisticos1 + pibpercapita1 + (1/densidade_populacional1);
+
    printf("- Estado: %c\n", estado1);
    printf("- Código:%4s\n", codigo1);
    printf("- Cidade: %s\n", cidade1);
-   printf("- Populacação: %d habitantes\n", populacao1);
+   printf("- Populacação: %lu habitantes\n", populacao1);
    printf("- Área: %.2f km²\n", area1);
    printf("- PIB: %.2f bilhões de reais\n", pib1);
    printf("- Pontos Turísticos: %d\n", pontos_turisticos1);
    printf("- Densidade Populacional: %.2f hab/km²\n", densidade_populacional1);
    printf("- PIB per Capita: %.2f reais\n", pibpercapita1);
+   printf(" - Super Poder: %.2f\n", superpoder1);
 
    printf("\n");
 
@@ -168,15 +172,19 @@ int main() {
    //Cálculo do pib per capita por meio da divisão do pib pela população;
    float pibpercapita2 = (pib2 * 1000000000) / (float) populacao2;
 
+   //Inverso e soma;
+   float superpoder2 = (float) populacao2 + area2 + pib2 + (float) pontos_turisticos2 + pibpercapita2 + (1/densidade_populacional2);
+
    printf("- Estado: %c\n", estado2);
    printf("- Código:%4s\n", codigo2);
    printf("- Cidade: %s\n", cidade2);
-   printf("- Populacação: %d habitantes\n", populacao2);
+   printf("- Populacação: %lu habitantes\n", populacao2);
    printf("- Área: %.2f km²\n", area2);
    printf("- PIB: %.2f bilhões de reais\n", pib2);
    printf("- Pontos Turísticos: %d\n", pontos_turisticos2);
    printf("- Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
    printf("- PIB per Capita: %.2f reais\n", pibpercapita2);
+   printf(" - Super Poder: %.2f\n", superpoder2);
 
    printf("\n");
   
