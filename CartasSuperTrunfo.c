@@ -33,14 +33,14 @@ int main() {
    //Estado;
    printf("Informe uma letra de 'A' a 'H' para indicar o primeiro estado.\n");
    printf("Estado:");
-   scanf("%c", &estado1);
+   scanf(" %c", &estado1);
 
    printf("\n"); //para dividir os dados e melhorar a visualização;
    
    //Código;
    printf("Informe a letra do estado mencionado anteriormente, seguida de um número de 01 a 04.\n");
    printf("Código:");
-   scanf("%s", codigo1);
+   scanf("%4s", codigo1);
 
    printf("\n"); //para dividir os dados e melhorar a visualização;
 
@@ -87,14 +87,14 @@ int main() {
    //Estado;
    printf("Informe uma letra de 'A' a 'H' para o segundo estado.\n");
    printf("Estado:");
-   scanf("%s", &estado2);
+   scanf(" %c", &estado2);
 
    printf("\n"); //para dividir os dados e melhorar a visualização;
    
    //Código;
    printf("Informe a letra do estado mencionado anteriormente, seguida de um número de 01 a 04.\n");
    printf("Código:");
-   scanf("%s", codigo2);
+   scanf("%4s", codigo2);
 
    printf("\n"); //para dividir os dados e melhorar a visualização;
 
@@ -133,6 +133,37 @@ int main() {
 
    printf("\n"); //para dividir os dados e melhorar a visualização;
 
+   //Impressão das cartas;
+
+   printf("* CARTA 1 *\n");
+   printf("***********\n");
+
+   printf("\n");
+
+   printf("- Estado: %c\n", estado1);
+   printf("- Código:%4s\n", codigo1);
+   printf("- Cidade: %s\n", cidade1);
+   printf("- Populacação: %d habitantes\n", populacao1);
+   printf("- Área: %.2f km²\n", area1);
+   printf("- PIB: %.2f bilhões de reais\n", pib1);
+   printf("- Pontos Turísticos: %d\n", pontos_turisticos1);
+
+   printf("\n");
+
+   printf("* CARTA 2 *\n");
+   printf("***********\n");
+
+   printf("\n");
+
+   printf("- Estado: %c\n", estado2);
+   printf("- Código:%4s\n", codigo2);
+   printf("- Cidade: %s\n", cidade2);
+   printf("- Populacação: %d habitantes\n", populacao2);
+   printf("- Área: %.2f km²\n", area2);
+   printf("- PIB: %.2f bilhões de reais\n", pib2);
+   printf("- Pontos Turísticos: %d\n", pontos_turisticos2);
+
+   printf("\n");
   
 
     return 0;
