@@ -217,7 +217,7 @@ int main() {
        printf("PIB\n");
        printf("***\n");
        printf("Carta 1 - %s: %.2f bilhões de reais\n", cidade1, pib1);
-       printf("Carta 2 - %s: %.2f bilhões de reais\n", cidade1, pib2);
+       printf("Carta 2 - %s: %.2f bilhões de reais\n", cidade2, pib2);
        resultado1 = pib1 > pib2 ? 1 : 0;
        break;
     case 4: //O maior quantidade de pontos turísticos vence
@@ -292,7 +292,7 @@ case 1: //A maior população vence
     printf("PIB\n");
     printf("***\n");
     printf("Carta 1 - %s: %.2f bilhões de reais\n", cidade1, pib1);
-    printf("Carta 2 - %s: %.2f bilhões de reais\n", cidade1, pib2);
+    printf("Carta 2 - %s: %.2f bilhões de reais\n", cidade2, pib2);
     resultado2 = pib1 > pib2 ? 1 : 0;
     break;
  case 4: //O maior quantidade de pontos turísticos vence
@@ -329,7 +329,14 @@ default: //Opção inválida
  break;
 }
 }
-
+//Resultado da comparação dos atributos
+printf("\n⚔️  RESULTADO DO DUELO DE COMPARAÇÃO ⚔️\n");
+printf("***************************************\n");
+if (resultado1 == 1 && resultado2 == 1) {
+    printf("Carta 1 -> %s: VENCEU!!!", cidade1);
+} else if (resultado1 == 0 && resultado2 == 0) {
+    printf("Carta 2 -> %s: VENCEU!!!", cidade2);
+} 
 
 return 0;
 }
