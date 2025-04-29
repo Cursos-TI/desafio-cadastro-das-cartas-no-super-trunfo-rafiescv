@@ -180,12 +180,156 @@ int main() {
    printf("                       ***********************************                         \n");
 
    int opcao1, opcao2;
+   int resultado1, resultado2;
 
    //Menu interativo: Opção 01
-   printf("\nEscolha o PRIMEIRO para comparar:\n");
-   printf(" 1. População\n 2. Área\n 3. PIB\n 4. Pontos Turísticos\n 5. Densidade Populacional (O menor vence)\n 6. PIB per Capita\n 7. Super Poder");
+   printf("\nEscolha o PRIMEIRO atributo para comparar:\n");
+   printf("******************************************\n");
+   printf(" 1. População\n");
+   printf(" 2. Área\n");
+   printf(" 3. PIB\n");
+   printf(" 4. Pontos Turísticos\n");
+   printf(" 5. Densidade Populacional (O menor vence)\n");
+   printf(" 6. PIB per Capita\n");
+   printf(" 7. Super Poder\n");
    printf("\nDigite a sua escolha (entre 1 e 7):");
    scanf("%d", &opcao1);
+   
+   printf("\n"); //Para dividir os dados
 
-   return 0;
+   switch (opcao1)
+   {
+   case 1: //A maior população vence 
+       printf("POPULAÇÃO\n");
+       printf("*********\n");
+       printf("Carta 1 - %s: %lu habitantes\n", cidade1, populacao1);
+       printf("Carta 2 - %s: %lu habitantes\n", cidade2, populacao2);
+       resultado1 = populacao1 > populacao2 ? 1 : 0;
+       break;
+    case 2: //A maior área vence
+       printf("ÁREA\n");
+       printf("****\n");
+       printf("Carta 1 - %s: %.2f km²\n", cidade1, area1);
+       printf("Carta 2 - %s: %.2f km²\n", cidade2, area2);
+       resultado1 = area1 > area2 ? 1 : 0;
+       break;
+    case 3: //O maior PIB vence
+       printf("PIB\n");
+       printf("***\n");
+       printf("Carta 1 - %s: %.2f bilhões de reais\n", cidade1, pib1);
+       printf("Carta 2 - %s: %.2f bilhões de reais\n", cidade1, pib2);
+       resultado1 = pib1 > pib2 ? 1 : 0;
+       break;
+    case 4: //O maior quantidade de pontos turísticos vence
+       printf("PONTOS TURÍSTICOS\n");
+       printf("*****************\n");
+       printf("Carta 1 - %s: %d\n", cidade1, pontos_turisticos1);
+       printf("Carta 2 - %s: %d\n", cidade2, pontos_turisticos2);
+       resultado1 = pontos_turisticos1 > pontos_turisticos2 ? 1 : 0; 
+       break;
+    case 5: //A menor desnidade populacional vence
+       printf("DENSIDADE POPULACIONAL\n");
+       printf("**********************\n");
+       printf("Carta 1 - %s: %.2f hab/km²\n", cidade1, densidade_populacional1);
+       printf("Carta 2 - %s: %.2f hab/km²\n", cidade2, densidade_populacional2);
+       printf("Obs: O menor vence.\n");
+       resultado1 = densidade_populacional1 < densidade_populacional2 ? 1 : 0;
+       break;
+    case 6: //O maior pib per capita vence
+      printf("PIB PER CAPITA\n");
+      printf("**************\n");
+      printf("Carta 1 - %s: %.2f reais\n", cidade1, pibpercapita1);
+      printf("Carta 2 - %s: %.2f reais\n", cidade2, pibpercapita2);
+      resultado1 = pibpercapita1 > pibpercapita2 ? 1 : 0;
+      break;
+    case 7: //O maior super poder vence
+      printf("SUPER PODER\n");
+      printf("***********\n");
+      printf("Carta 1 - %s: %.2f\n", cidade1, superpoder1);
+      printf("Carta 2 - %s: %.2f\n", cidade2, superpoder2);
+      resultado1 = superpoder1 > superpoder2 ? 1 : 0;
+       break;
+   default: //Opção inválida 
+       printf("Opção inválida.");
+    break;
+   }
+
+//Menu interativo: Opção 02
+printf("\nEscolha o SEGUNDO atributo para comparar:\n");
+printf("*****************************************\n");
+printf(" 1. População\n");
+printf(" 2. Área\n");
+printf(" 3. PIB\n");
+printf(" 4. Pontos Turísticos\n");
+printf(" 5. Densidade Populacional (O menor vence)\n");
+printf(" 6. PIB per Capita\n");
+printf(" 7. Super Poder\n");
+printf("\nDigite a sua escolha (entre 1 e 7):");
+scanf("%d", &opcao2);
+
+if (opcao1 == opcao2) 
+{
+  printf("\n# NÃO É PERMITIDO REPETIR O PRIMEIRO ATRIBUTO ESCOLHIDO #\n");
+} else { 
+  
+switch (opcao2)
+{
+case 1: //A maior população vence 
+    printf("POPULAÇÃO\n");
+    printf("*********\n");
+    printf("Carta 1 - %s: %lu habitantes\n", cidade1, populacao1);
+    printf("Carta 2 - %s: %lu habitantes\n", cidade2, populacao2);
+    resultado2 = populacao1 > populacao2 ? 1 : 0;
+    break;
+ case 2: //A maior área vence
+    printf("ÁREA\n");
+    printf("****\n");
+    printf("Carta 1 - %s: %.2f km²\n", cidade1, area1);
+    printf("Carta 2 - %s: %.2f km²\n", cidade2, area2);
+    resultado2 = area1 > area2 ? 1 : 0;
+    break;
+ case 3: //O maior PIB vence
+    printf("PIB\n");
+    printf("***\n");
+    printf("Carta 1 - %s: %.2f bilhões de reais\n", cidade1, pib1);
+    printf("Carta 2 - %s: %.2f bilhões de reais\n", cidade1, pib2);
+    resultado2 = pib1 > pib2 ? 1 : 0;
+    break;
+ case 4: //O maior quantidade de pontos turísticos vence
+    printf("PONTOS TURÍSTICOS\n");
+    printf("*****************\n");
+    printf("Carta 1 - %s: %d\n", cidade1, pontos_turisticos1);
+    printf("Carta 2 - %s: %d\n", cidade2, pontos_turisticos2);
+    resultado2 = pontos_turisticos1 > pontos_turisticos2 ? 1 : 0; 
+    break;
+ case 5: //A menor desnidade populacional vence
+    printf("DENSIDADE POPULACIONAL\n");
+    printf("**********************\n");
+    printf("Carta 1 - %s: %.2f hab/km²\n", cidade1, densidade_populacional1);
+    printf("Carta 2 - %s: %.2f hab/km²\n", cidade2, densidade_populacional2);
+    printf("Obs: O menor vence.\n");
+    resultado2 = densidade_populacional1 < densidade_populacional2 ? 1 : 0;
+    break;
+ case 6: //O maior pib per capita vence
+   printf("PIB PER CAPITA\n");
+   printf("**************\n");
+   printf("Carta 1 - %s: %.2f reais\n", cidade1, pibpercapita1);
+   printf("Carta 2 - %s: %.2f reais\n", cidade2, pibpercapita2);
+   resultado2 = pibpercapita1 > pibpercapita2 ? 1 : 0;
+   break;
+ case 7: //O maior super poder vence
+   printf("SUPER PODER\n");
+   printf("***********\n");
+   printf("Carta 1 - %s: %.2f\n", cidade1, superpoder1);
+   printf("Carta 2 - %s: %.2f\n", cidade2, superpoder2);
+   resultado2 = superpoder1 > superpoder2 ? 1 : 0;
+    break;
+default: //Opção inválida 
+    printf("Opção inválida.");
+ break;
+}
+}
+
+
+return 0;
 }
